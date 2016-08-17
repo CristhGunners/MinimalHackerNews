@@ -1,11 +1,11 @@
 block link
     - var selected = 'Top'; //default
 
-- var menu = { 'Top': '/', 'Best': 'best.html', 'About': 'about.html'};
+- var menu = { 'Top': 'index.html', 'Best': 'best.html', 'About': 'about.html'};
 
 header
     .logo
-        a(href="/")
+        a(href="index.html")
             span.icon-hacker-news
     nav
         each val, key in menu
