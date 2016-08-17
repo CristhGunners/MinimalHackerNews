@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='description', content='The best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.')
+        meta(name="author", content="Cristhofer Andana")
+        meta(name="keywords", content="articles,news,best,technology,startups,programming,Hacker,YC, code")
+        meta(name="theme-color" content="#FF6600")
+        // Facebook
+        meta(property="og:title" content="Minimal Hacker News")
+        meta(property="og:site_name" content="Minimal Hacker News")
+        meta(property="og:url" content="http://cristhgunners.github.io/MinimalHackerNews/")
+        meta(property="og:description" content="The best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.")
+        meta(property="og:image" content="images/mhn.png")
+        meta(property="og:type" content="website")
+        meta(property="og:locale" content="en_US")
+        // Twitter
+        meta(property="twitter:card" content="summary")
+        meta(property="twitter:title" content="Minimal Hacker News")
+        meta(property="twitter:description" content="The best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.")
+        meta(property="twitter:creator" content="@CristhGunners")
+        meta(property="twitter:url" content="http://cristhgunners.github.io/MinimalHackerNews/")
+        meta(property="twitter:image" content="images/mhn.png")
+        meta(property="twitter:image:alt" content="images/mhn.png")
+        title Minimal Hacker News - 
+            block title 
+        link(rel="icon" type="image/png" href="images/mhnlogo.png")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='css/icons/styles.css')
+    body
+        include header.jade
+        section#content
+            block content
+        button#top: span.icon-caret-up
+        include footer.jade
+        script(src='http://code.jquery.com/jquery-latest.min.js')
+        block js
+        script(src='js/main.js')

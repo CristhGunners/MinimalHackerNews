@@ -1,0 +1,30 @@
+extends components/base.jade
+
+block link
+  - var selected = 'About';
+ 
+block title
+    | About
+
+block content
+    section
+        h3
+            span.icon-code
+            | About
+        p: | The best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.
+        a.repo(href="", target="_blank")
+            span.icon-github
+            | Github Repository
+        .author
+            figure
+                img(src="images/profile.jpg", alt="")
+            h2: | Cristhofer Andana
+            nav
+                a(href="https://twitter.com/CristhGunners", target="_blank"): span.icon-twitter
+                a(href="https://instagram.com/cristhgunners/", target="_blank"): span.icon-instagram
+                a(href="https://dribbble.com/CristhGunners", target="_blank"): span.icon-dribbble
+                a(href="https://www.behance.net/cristhgunners", target="_blank"): span.icon-social-behance
+                a(href="https://github.com/CristhGunners", target="_blank"): span.icon-github
+                a(href="https://medium.com/@cristhgunners", target="_blank"): span.icon-social-medium
+                a(href="http://cristhgunners.github.io/", target="_blank"): span.icon-web
+        
