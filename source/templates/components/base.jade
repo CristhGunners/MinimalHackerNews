@@ -27,7 +27,7 @@ html(lang="en")
             block title 
         link(rel="icon" type="image/png" href="images/mhnlogo.png")
         link(rel='stylesheet', href='css/style.css')
-        link(rel='stylesheet', href='css/icons/styles.css')
+        link(rel='stylesheet', href='icons/styles.css')
     body
         include header.jade
         section#content
@@ -35,5 +35,6 @@ html(lang="en")
         button#top: span.icon-caret-up
         include footer.jade
         script(src='https://code.jquery.com/jquery-latest.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js')
         block js
-        script(src='js/main.js')
+        script(src='js/app.js')
