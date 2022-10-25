@@ -1,5 +1,5 @@
 {
-  "name": "Minimal-Hacker-News",
+  "name": "minimal-hacker-news",
   "version": "1.0.0",
   "description": "Minimal Hacker News",
   "main": "site/index.html",
@@ -12,10 +12,14 @@
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
     "gulp-stylus": "^2.1.0",
+    "gulp-rename": "^2.0.0",
     "gulp-uglify": "^2.0.0",
     "nib": "^1.1.0"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "gulp serve",
+    "build": "gulp build"
+  },
   "author": "Cristhofer Andana Alcaino",
   "license": "ISC"
 }

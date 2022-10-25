@@ -93,6 +93,10 @@ section#content
         p
             color lead1
             text-align center
+            max-width 540px
+            line-height 1.5
+            margin-left auto
+            margin-right auto
 
         h3
             padding 1em
@@ -133,6 +137,9 @@ section#content
 
                 &.on
                     display block
+
+                &:hover
+                    background-color darken(color1, 5)
 
             div#articles
                 width 100%
@@ -203,6 +210,7 @@ section#content
                             align-items center
                             justify-content flex-start
                             flex-flow row wrap
+                            margin-top 0.5rem
 
                             h4
                                 color lead1
@@ -211,7 +219,7 @@ section#content
                                 margin 0
                                 margin-right 0.5em
                                 position relative
-                                padding 0 10px 0 5px
+                                padding 0 10px 0 0
 
                                 &:nth-child(-n+4)
                                     &:after

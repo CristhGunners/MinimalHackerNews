@@ -17,14 +17,11 @@ The best articles on startups, technology, programming, and more. All links are 
  - Best
  - About
 
-[Go Minimal Hacker News](http://cristhgunners.github.io/MinimalHackerNews/)
+[Go Minimal Hacker News](https://cristhgunners.github.io/MinimalHackerNews/)
 
 **Follow Me**
 
  - [Dribbble](https://dribbble.com/CristhGunners)
- - [Twitter](https://twitter.com/CristhGunners)
- - [Instagram](https://instagram.com/cristhgunners/)
  - [Behance](https://www.behance.net/cristhgunners)
- - [Medium](https://medium.com/@cristhgunners)
  - [Github](https://github.com/CristhGunners)
- - [Website](http://cristhgunners.github.io/)
+ - [Website](https://cristhgunners.github.io/)
