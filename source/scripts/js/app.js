@@ -34,7 +34,7 @@ $(document).ready(function () {
             .append(
               "<article><div class='info'><h2><a href=" +
                 post.url +
-                " target='_blank'>" +
+                " target='_blank' rel='nofollow noreferrer noopener'>" +
                 post.title +
                 "</a></h2><div class='detail'><h4>" +
                 post.score +
@@ -42,9 +42,11 @@ $(document).ready(function () {
                 post.by +
                 '</h4><h4>' +
                 post.type +
-                '</h4><h4>' +
+                '</h4><h4><a href=https://news.ycombinator.com/item?id=' +
+                post.id +
+                " target='_blank' rel='nofollow noreferrer noopener'>" +
                 post.descendants +
-                ' comments</h4><h4>' +
+                ' comments</a></h4><h4>' +
                 moment.unix(d).fromNow() +
                 '</h4></div></div></article>'
             )
