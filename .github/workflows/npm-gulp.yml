@@ -28,9 +28,9 @@ jobs:
         gulp build
 
     - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./site
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: ./site
 
   # Deployment job
   deploy:
