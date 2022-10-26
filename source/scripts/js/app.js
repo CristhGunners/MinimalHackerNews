@@ -1,12 +1,14 @@
 $(document).ready(function () {
-  if (type_stories === 'Top') {
-    var url = 'https://hacker-news.firebaseio.com/v0/topstories.json';
-    var datenow = new Date();
-    var dateformat = moment(datenow).format('DD of MMMM, YYYY');
-    $('.list h3#date span.datenow').html(dateformat);
-  } else if (type_stories === 'Best') {
-    var url = 'https://hacker-news.firebaseio.com/v0/beststories.json';
-  }
+  try {
+    if (type_stories === 'Top') {
+      var url = 'https://hacker-news.firebaseio.com/v0/topstories.json';
+      var datenow = new Date();
+      var dateformat = moment(datenow).format('DD of MMMM, YYYY');
+      $('.list h3#date span.datenow').html(dateformat);
+    } else if (type_stories === 'Best') {
+      var url = 'https://hacker-news.firebaseio.com/v0/beststories.json';
+    }
+  } catch (e) {}
 
   var sv = 25;
   var stories = [];
