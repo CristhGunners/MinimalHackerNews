@@ -3,6 +3,9 @@ extends components/base.jade
 block link
   - var selected = 'Best';
 
+block basetag
+  -var base = '../'
+
 block title
     | Best Stories
 
@@ -14,7 +17,7 @@ block content
         #articles
         .loading
         button#more: | Load More
-        
+
 block js
     script.
         var type_stories = "Best";
