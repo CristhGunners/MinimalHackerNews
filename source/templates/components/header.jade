@@ -1,7 +1,10 @@
 block link
     - var selected = 'Top'; //default
 
-- var menu = { 'Top': './', 'Best': './best', 'About': './about'};
+block menu
+    - var headerbase = '.'
+
+- var menu = { 'Top': `${headerbase}/` , 'Best': `${headerbase}/best`, 'About': `${headerbase}/about`};
 
 header
     a(href="./").logo
