@@ -5,11 +5,12 @@ doctype html
 html(lang="en")
     head
         meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
         meta(name='description', content='The best articles on startups, technology, programming, and more. All links are curated by hand from the popular Hacker News site.')
         meta(name="author", content="Cristhofer Andana")
         meta(name="keywords", content="articles,news,best,technology,startups,programming,Hacker,YC, code")
-        meta(name="theme-color" content="#FF6600")
+        meta(name="msapplication-TileColor", content="#ff6600")
+        meta(name="theme-color", content="#ff6600")
         // Facebook
         meta(property="og:title" content="Minimal Hacker News")
         meta(property="og:site_name" content="Minimal Hacker News")
@@ -28,16 +29,20 @@ html(lang="en")
         meta(property="twitter:image:alt" content="#{base}images/mhn.png")
         title Minimal Hacker News -
             block title
-        link(rel="icon" type="image/png" href="#{base}images/mhnlogo.png")
+        link(rel="apple-touch-icon", sizes="144x144", href="#{base}favicons/apple-touch-icon.png")
+        link(rel="icon", type="image/png", sizes="32x32", href="#{base}favicons/favicon-32x32.png")
+        link(rel="icon", type="image/png", sizes="16x16", href="#{base}favicons/favicon-16x16.png")
+        link(rel="manifest", href="#{base}favicons/site.webmanifest")
+        link(rel="mask-icon", href="#{base}favicons/safari-pinned-tab.svg", color="#ff6600")
         link(rel='stylesheet', href='#{base}css/style.css')
         link(rel='stylesheet', href='#{base}icons/styles.css')
     body
         include header.jade
         section#content
             block content
-        button#top: span.icon-caret-up
+        button#top(aria-label="Scroll to top", title="Scroll to top"): span.icon-caret-up
         include footer.jade
-        script(src='https://code.jquery.com/jquery-latest.min.js')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js')
         block js
         script(src='#{base}js/app.js')

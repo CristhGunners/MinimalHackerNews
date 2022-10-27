@@ -3,7 +3,7 @@ $(document).ready(function () {
     if (type_stories === 'Top') {
       var url = 'https://hacker-news.firebaseio.com/v0/topstories.json';
       var datenow = new Date();
-      var dateformat = moment(datenow).format('DD of MMMM, YYYY');
+      var dateformat = moment(datenow).format('Do MMMM, YYYY');
       $('.list h3#date span.datenow').html(dateformat);
     } else if (type_stories === 'Best') {
       var url = 'https://hacker-news.firebaseio.com/v0/beststories.json';
@@ -36,19 +36,19 @@ $(document).ready(function () {
                 post.url +
                 " target='_blank' rel='nofollow noreferrer noopener'>" +
                 post.title +
-                "</a></h2><div class='detail'><h4>" +
+                "</a></h2><div class='detail'><span>" +
                 post.score +
-                ' points</h4><h4>' +
+                ' points</span><span>' +
                 post.by +
-                '</h4><h4>' +
+                '</span><span>' +
                 post.type +
-                '</h4><h4><a href=https://news.ycombinator.com/item?id=' +
+                '</span><span><a href=https://news.ycombinator.com/item?id=' +
                 post.id +
                 " target='_blank' rel='nofollow noreferrer noopener'>" +
                 post.descendants +
-                ' comments</a></h4><h4>' +
+                ' comments</a></span><span>' +
                 moment.unix(d).fromNow() +
-                '</h4></div></div></article>'
+                '</span></div></div></article>'
             )
             .promise()
             .done(function () {
